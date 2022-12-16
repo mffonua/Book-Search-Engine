@@ -15,7 +15,7 @@
       "url": "git@work.github.com:arosenkranz/googlebooks-app.git"
     },
     "keywords": [],
-    "author": "",
+    "author": "Miles Fonua",
     "license": "ISC",
     "dependencies": {
       "if-env": "^1.0.4"
