@@ -7,6 +7,7 @@ import { LOGIN } from '../utils/mutations';
 import Auth from '../utils/auth';
 
 const LoginForm = () => {
+  const [login] = useMutation(LOGIN);
   const [userFormData, setUserFormData] = useState({ email: '', password: '' });
   const [validated] = useState(false);
   const [showAlert, setShowAlert] = useState(false);
@@ -20,7 +21,6 @@ const LoginForm = () => {
     event.preventDefault();
 
     // check if form has everything (as per react-bootstrap docs)
-
     const form = event.currentTarget;
     if (form.checkValidity() === false) {
       event.preventDefault();
